@@ -1,0 +1,72 @@
+.touristplaces {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:row;
+    padding:2rem;
+    border-radius:1rem;
+    margin:4rem;
+    background:var(--gradient-bar);
+}
+
+.ta-content p {
+    font-family:var(--font-family);
+    font-size:12px;
+    font-weight:500;
+    color:#0e0e0e;
+    line-height:30px;
+}
+
+.ta-content h3 {
+    font-family:var(--font-family);
+    font-weight:800;
+    font-size:24px;
+    line-height:45px;
+    color:blueviolet;
+}
+
+.ta-button {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left:2rem;
+}
+
+.ta-button button {
+    background:#0e0e0e;
+    color:#fff;
+    border-radius:40px;
+    font-size:18px;
+    font-family:var(--font-family);
+    padding:0.5rem 1rem;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    min-width:150px;
+}
+
+@media screen and (max-width:650px) {
+    .touristplaces {
+        flex-direction:column;
+    }
+
+    .ta-button {
+        margin:2rem 0 0;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .touristplaces {
+        margin:4rem 2rem;
+    }
+
+    .ta-content h3 {
+        font-size:18px;
+        line-height:32px;
+    }
+
+    .ta-button button {
+        font-size:14px;
+        line-height:28px;
+    }
+}

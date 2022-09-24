@@ -1,0 +1,74 @@
+.side_bar {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+
+    padding:2rem 6rem
+}
+
+.some_links {
+    display:flex;
+    flex:1;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.tourist_attractions{
+    margin-right:2rem;
+}
+
+.find-more{
+    background-color:var(--color-footer);
+    padding:50px 60px;
+}
+
+.find-more p{
+    display:inline;
+    flex-direction:row;
+    color:#fff;
+    font-family:var(--font-family);
+    font-weight:500;
+    font-size:18px;
+    line-height:30px;
+    text-transform:capitalize;
+    cursor: pointer;
+    margin: 0 1rem;
+}
+
+.sign button{
+    padding:0.5rem 1rem;
+    background:lightsalmon;
+    font-family:var(--font-family);
+    font-weight:500;
+    font-size:18px;
+    line-height:25px;
+    color:#fff;
+    border:0;
+    margin-bottom:20px;
+    display:grid;
+    outline:none;
+    cursor:pointer;
+    border-radius:5px;
+
+}
+
+.menu-bar-container {
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+    text-align:end;
+    background:var(--color-footer);
+    padding:2rem;
+    position:absolute;
+    top:40px;
+    margin-top:1rem;
+    right:0;
+    flex-direction:column;
+    min-width:210px;
+    border-radius:5px;
+    box-shadow: 0 0 5 rgba(0,0,0,0,0.2);
+}
+
+.menu-bar-container p {
+    margin: 1rem 0;
+}

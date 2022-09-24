@@ -1,0 +1,54 @@
+.cities {
+    display:flex;
+    flex-direction:column;
+}
+
+.cities-heading {
+    width:100%;
+    text-align:left;
+    margin-bottom:5rem;
+}
+
+.cities-heading h1{
+    font-family:var(--font-family);
+    font-weight:800;
+    font-size:60px;
+    letter-spacing:-0.04em;
+    line-height:75px;
+}
+
+.cities-container {
+    display:flex;
+    flex-direction:row;
+}
+
+.cities-container-groupA {
+    flex:0.75;
+    margin-right:2rem;
+}
+
+.cities-container-groupB {
+    display:grid;
+    flex:1;
+    grid-template-columns:repeat(2, 1fr);
+    grid-gap:2rem;
+}
+
+@media screen and (max-width:990px) {
+    .cities-container {
+        flex-direction:column-reverse;
+    }
+
+    .cities-container-groupA {
+        margin:2rem 0;
+    }
+
+    .cities-container-groupA {
+        width:50%;
+    }
+
+    .cities-container-groupB {
+        height:200px;
+    }
+}
+
